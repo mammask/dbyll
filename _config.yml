@@ -14,7 +14,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Analytics Blog
+      title: Personal Analytics Home Page
 
 description: 
 author:
