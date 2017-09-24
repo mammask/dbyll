@@ -7,4 +7,4 @@ fullview: true
 comments: true
 ---
 
-Plain text - Visualize correlation heatmap using R
+In this section we provide an R script to create interactive correlation heatmaps using R.
