@@ -16,11 +16,11 @@ defaults:
     values:
       title: Analytics Blog
 
-description: Stylish Jekyll Theme
+description: Data Scientist, Statistical Programmer
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
+  name: Kostas Mammas
+  email: mammas_k@live.com
+  github: https://github.com/mammask
   twitter: dbtek
   pinterest: asd123
   linkedin: asd123
