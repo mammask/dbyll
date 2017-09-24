@@ -7,6 +7,4 @@ fullview: true
 comments: true
 ---
 
-## Test Post
-
-This is a test post defined
+### Visualize correlation heatmap using R!
