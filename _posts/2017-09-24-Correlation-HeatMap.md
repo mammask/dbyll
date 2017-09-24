@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Interactive Correlation HeatMap
+title: Correlation HeatMap
 categories: [visualization]
 tags: [analytics, visualization]
 fullview: true
 comments: true
 ---
 
-### Computation of correlation heatmap
-
-In this section we provide an example of how to compute an interactive correlation heatmap using **R**:
+In this section we provide an example of how to compute a correlation heatmap using **R**:
 
 ```{r}
 CorrFunction <- function(metricDat,
-                         featureVar){
+                         featureVar,
+                         interactiveFlag){
   
   # function name: CorrFunction
   #       purpose: To compute an interactive correlation heatmap between a set of features
   #       version: 1a
   #        inputs:
-  #             - metricDat : dataset with feature variables in numeric or integer format
-  #             - featureVar: a vector of the feature variables
+  #             - metricDat       : dataset with feature variables in numeric or integer format
+  #             - featureVar      : a vector of the feature variables
+  #             - interactiveFlag : if TRUE generate an interactive correlation heatmap
   #       outputs:
   #             - p         : an interactive correlation matrix of the selected features
   #          date: 10/02/2017
@@ -29,6 +29,7 @@ CorrFunction <- function(metricDat,
   library(data.table)
   library(ggplot2)
   library(plotly)
+  library(stringr)
   
   corrData <- data.table(cor(metricDat[,featureVar, with = F]), keep.rownames = T)
   setnames(corrData, "rn", "Metric A")
@@ -47,7 +48,7 @@ CorrFunction <- function(metricDat,
   p <- ggplot(corrData, aes(x = `Metric A`, y = `Metric B`)) +
        geom_tile(aes(fill=categ),colour="black")  +
        scale_fill_brewer(palette = "RdYlGn",name="Correlation") + 
-       xlab("") + ylab("") + theme(axis.text.x = element_text(angle = 0, hjust = 1))
+       xlab("") + ylab("") +
        geom_text(aes(label=paste0(format(Correlation, big.mark=",",
        scientific=FALSE))),size = 3, check_overlap = F) + 
        ggtitle("Correlation of feature variables") + 
@@ -58,7 +59,24 @@ CorrFunction <- function(metricDat,
              axis.text.x      = element_text(size=5),
              axis.line.x      = element_line(color="black"),
              axis.line.y      = element_line(color="black"))
-             
-  return(ggplotly(p))
+  
+  if (interactiveFlag == TRUE){ return(ggplotly(p)) } else { return(p)  }  
 }
 ```
+### Example
+
+In the following example we generate a table of 100 variables sampled from the normal distribution and we comute the correlation matrix:
+
+```{r}
+# Set seed
+set.seed(42)
+# Generate a random dataset
+tbl        <- data.table(matrix(rnorm(1000),ncol = 10))
+# Define the names of the features
+featureVec <- paste0("V",1:10)
+# Produce output
+corrTbl    <- CorrFunction(metricDat = tbl, featureVar = featureVec, interactiveFlag = FALSE)
+```
+![Correlation Heatmap](/Users/konstantinos.mammas/Documents/mammask.github.io/plots/CorrPlot.png "Logo Title Text 1")
+
+
