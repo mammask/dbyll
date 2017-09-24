@@ -7,8 +7,6 @@ fullview: true
 comments: true
 ---
 
-### Computation of correlation heatmap
-
 In this section we provide an example of how to compute an interactive correlation heatmap using **R**:
 
 ```{r}
