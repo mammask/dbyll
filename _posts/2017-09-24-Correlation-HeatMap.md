@@ -7,8 +7,11 @@ fullview: true
 comments: true
 ---
 
+<<<<<<< HEAD
 ### Computation of correlation heatmap
 
+=======
+>>>>>>> e828bae8313d1cf63f37eb2ddf6ff25e7ee45468
 In this section we provide an example of how to compute an interactive correlation heatmap using **R**:
 
 ```{r}
@@ -61,4 +64,8 @@ CorrFunction <- function(metricDat,
              
   return(ggplotly(p))
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> e828bae8313d1cf63f37eb2ddf6ff25e7ee45468
