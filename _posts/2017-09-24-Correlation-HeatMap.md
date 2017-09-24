@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Correlation HeatMap
+title: Interactive Correlation HeatMap
 categories: [visualization]
 tags: [analytics, visualization]
 fullview: true
