@@ -6,8 +6,8 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 disqus: dbyll
-google_analytics: dbyll
-title: Kostas Mammas - Analytics Blog
+google_analytics: Analytics Blog
+title: mammask
 
 defaults:
   -
