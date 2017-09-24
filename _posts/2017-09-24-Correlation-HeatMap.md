@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Correlation HeatMap
-categories: [general, visualization]
-tags: [demo, dbyll, dbtek, setup]
+categories: [visualization]
+tags: [analytics, visualization]
 fullview: true
 comments: true
 ---
