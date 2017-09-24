@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Temp Post!
+title: Correlation HeatMap
 categories: [general, visualization]
 tags: [demo, dbyll, dbtek, setup]
 fullview: true
