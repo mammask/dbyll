@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Temp Post!
-categories: [general, setup, demo]
+categories: [general, visualization]
 tags: [demo, dbyll, dbtek, setup]
 fullview: true
 comments: true
