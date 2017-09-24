@@ -16,7 +16,7 @@ defaults:
     values:
       title: Analytics Blog
 
-description: Data Scientist, Statistical Programmer
+description: 
 author:
   name: Kostas Mammas
   email: mammas_k@live.com
@@ -24,7 +24,7 @@ author:
   twitter: dbtek
   pinterest: asd123
   linkedin: asd123
-  bio: Your stylish, minimalist theme!
+  bio: Data Scientist, Statistical Programmer
   email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml
