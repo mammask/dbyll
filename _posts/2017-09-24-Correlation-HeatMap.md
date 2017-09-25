@@ -77,6 +77,6 @@ featureVec <- paste0("V",1:10)
 # Produce output
 corrTbl    <- CorrFunction(metricDat = tbl, featureVar = featureVec, interactiveFlag = FALSE)
 ```
-<img src="/Users/konstantinos.mammas/Documents/mammask.github.io/plots/CorrPlot.png">
+<img src="https://github.com/mammask/mammask.github.io/blob/master/plots/CorrPlot.png?raw=true">
 
 
