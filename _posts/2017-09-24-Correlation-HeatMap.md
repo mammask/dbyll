@@ -2,7 +2,7 @@
 layout: post
 title: Correlation HeatMap
 categories: [visualization]
-tags: [analytics, visualization]
+tags: [analytics, visualization, R]
 fullview: true
 comments: true
 ---

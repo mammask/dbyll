@@ -2,7 +2,7 @@
 layout: post
 title: Overlayed Histogram
 categories: [visualization]
-tags: [analytics, visualization]
+tags: [analytics, visualization, R]
 fullview: true
 comments: true
 ---
