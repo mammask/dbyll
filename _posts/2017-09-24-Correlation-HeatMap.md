@@ -77,6 +77,6 @@ featureVec <- paste0("V",1:10)
 # Produce output
 corrTbl    <- CorrFunction(metricDat = tbl, featureVar = featureVec, interactiveFlag = FALSE)
 ```
-![Correlation Heatmap](/Users/konstantinos.mammas/Documents/mammask.github.io/plots/CorrPlot.png "Logo Title Text 1")
+![](/Users/konstantinos.mammas/Documents/mammask.github.io/plots/CorrPlot.png?raw=true)
 
 
