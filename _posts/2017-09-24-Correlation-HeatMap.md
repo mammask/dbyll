@@ -68,6 +68,7 @@ CorrFunction <- function(metricDat,
 In the following example we generate a table of 100 variables sampled from the normal distribution and we comute the correlation matrix:
 
 ```{r}
+library(data.table)
 # Set seed
 set.seed(42)
 # Generate a random dataset

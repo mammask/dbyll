@@ -7,7 +7,7 @@ fullview: true
 comments: true
 ---
 
-In the following example we produce an overlayed histogram of a continuous feature variable against a binary target variable to explore possible underlying patterns:
+In the following example we produce an overlayed histogram of a continuous feature grouped by a classification variable to indentify the underlying pattern of predicors in a model:
 
 ```{r}
 OverlayedHist <- function(mData       ,
@@ -66,3 +66,29 @@ OverlayedHist <- function(mData       ,
   
 }
 ```
+
+### Example
+
+In the following example, we generate a table of 100 random continuous variables and a target of two levels:
+
+```{r}
+library(data.table)
+tbl        <- data.table(matrix(rnorm(1000, mean = 10),ncol = 10))
+tbl[, Target:= sample(c("A", "B"),size = 100, replace = T)]
+
+OverlayedHist(mData        = tbl,
+              featureVar   = "V1",
+              grouper      = "Target",
+              mbinwidth    = 0.3,
+              mTitle       = "Overlayed Histogram",
+              mxlab        = "V1",
+              mylab        = "Count",
+              mlegendTitle = "Target Levels",
+              dynPlot      = FALSE,
+              savePlot     = FALSE,
+              savePath     = ""
+)
+```
+
+<img src="https://github.com/mammask/mammask.github.io/blob/master/plots/Overlayed_Histogram.png?raw=true">
+
