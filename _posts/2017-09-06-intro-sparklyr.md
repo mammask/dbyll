@@ -1,15 +1,11 @@
 ---
-layout: page
+layout: post
 title: Introduction to sparklyr
 categories: [manipulation, Big Data]
 tags: [R, sparklyr, dplyr]
-fullview: false
-comments: false
+fullview: true
+comments: true
 ---
-
-
-Introduction to `sparklyr`
---------------------------
 
 **Apache Spark** is an open source parallel processing framework for running large-scale data analytics applications across clustered computers. It can handle both batch and real-time analytics and data processing workloads.
 
@@ -370,8 +366,6 @@ tbl %>% dplyr::filter(STAID == 229 & RR != -9999L) %>%
             ggtitle("Annual Rainfall series of station: 229") + xlab("Year") +
               ylab("Annual Rainfall Amount (mm)")
 ```
-
-![](Lecture-2-Big_Data_Management_Using_Sparklyr_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 Useful functions
 ================
