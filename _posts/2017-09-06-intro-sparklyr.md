@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: page
 title: Introduction to sparklyr
 categories: [manipulation, Big Data]
 tags: [R, sparklyr, dplyr]
 fullview: false
-comments: true
+comments: false
 ---
 
 
