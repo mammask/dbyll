@@ -3,9 +3,11 @@ layout: post
 title: Introduction to sparklyr
 categories: [manipulation, Big Data]
 tags: [R, sparklyr, dplyr]
-fullview: true
+fullview: false
 comments: true
 ---
+
+**Apache Spark** is an open source parallel processing framework for running large-scale data analytics applications across clustered computers. It can handle both batch and real-time analytics and data processing workloads.
 
 **sparklyr** is an R interface to Apache Spark, a fast and general engine for big data processing. This package supports connecting to local and remote Apache Spark clusters, provides a **dplyr** compatible back-end, and provides an interface to Spark's built-in machine learning algorithms
 
